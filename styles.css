@@ -1,114 +1,68 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    color: white;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-#plants .plant-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#plants .plant-item {
-    background: #f4f4f4;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 8px;
-    width: calc(33% - 2rem);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact-form {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-#contact-form label {
-    margin-top: 1rem;
+.main-section {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
-#contact-form input, #contact-form textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    width: 100%;
-    max-width: 500px;
+.left-div, .right-div {
+    flex: 1;
+    padding: 20px;
 }
 
-#contact-form button {
-    margin-top: 1rem;
-    padding: 0.5rem 2rem;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.left-div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.right-div h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.right-div p {
+    margin: 10px 0;
+}
+
+.right-div a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.right-div a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    background: #333;
-    color: white;
+    margin-top: auto;
     text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
     width: 100%;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    #plants .plant-item {
-        width: calc(50% - 2rem);
-    }
-}
-
-@media (max-width: 480px) {
-    #plants .plant-item {
-        width: calc(100% - 2rem);
-    }
+    position: fixed;
+    bottom: 0;
 }
